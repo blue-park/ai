@@ -1,92 +1,92 @@
-0. µö·¯´× ÇÙ½É Task ½Ç½À °úÁ¤ ¾È³»
-1. AI ±âº» ÈÈ¾îº¸±â
-  1-1 AI, ML, DL °³³ä
+0. ë”¥ëŸ¬ë‹ í•µì‹¬ Task ì‹¤ìŠµ ê³¼ì • ì•ˆë‚´
+1. AI ê¸°ë³¸ í›‘ì–´ë³´ê¸°
+  1-1 AI, ML, DL ê°œë…
     AI > ML > DL
-    ÀÎ°ø ´º·±°ú ÀÎ°ø ½Å°æ¸Á
-      FNN (FCN): Feedforward Neural Network ¶Ç´Â Fully-connected Neural Network
-        FNN: ³ëµå³¢¸® ¸¶±¸ÀâÀÌ·Î µ¥ÀÌÅÍ¸¦ ¾ÕÀ¸·Î º¸³Â´Ù, µÚ·Î º¸³Â´Ù ÇÏ´Â µî... Àý´ë ¼ø¼­°¡ ²¿ÀÌÁö ¾Ê°í ÇÑÂÊ ¹æÇâÀ¸·Î¸¸ÀÇ Èå¸§¸¸ Á¸Àç
-        FCN: ÇÏ³ªÀÇ ³ëµå´Â ´ÙÀ½ ·¹ÀÌ¾îÀÇ ¸ðµç ³ëµå¿Í ¿¬°áµÈ´Ù°í ÇÏ¿©, ¿ÏÀüÈ÷ ¿¬°áµÇ¾ú´Ù
+    ì¸ê³µ ë‰´ëŸ°ê³¼ ì¸ê³µ ì‹ ê²½ë§
+      FNN (FCN): Feedforward Neural Network ë˜ëŠ” Fully-connected Neural Network
+        FNN: ë…¸ë“œë¼ë¦¬ ë§ˆêµ¬ìž¡ì´ë¡œ ë°ì´í„°ë¥¼ ì•žìœ¼ë¡œ ë³´ëƒˆë‹¤, ë’¤ë¡œ ë³´ëƒˆë‹¤ í•˜ëŠ” ë“±... ì ˆëŒ€ ìˆœì„œê°€ ê¼¬ì´ì§€ ì•Šê³  í•œìª½ ë°©í–¥ìœ¼ë¡œë§Œì˜ íë¦„ë§Œ ì¡´ìž¬
+        FCN: í•˜ë‚˜ì˜ ë…¸ë“œëŠ” ë‹¤ìŒ ë ˆì´ì–´ì˜ ëª¨ë“  ë…¸ë“œì™€ ì—°ê²°ëœë‹¤ê³  í•˜ì—¬, ì™„ì „ížˆ ì—°ê²°ë˜ì—ˆë‹¤
       CNN : Convolutional Neural Network
-        ÀÎ°ø½Å°æ¸ÁÀº Image ÇüÅÂ¿Í °°ÀÌ °¡·Îx¼¼·ÎÀÇ °ø°£Á¤º¸¸¦ °¡Áø µ¥ÀÌÅÍ¸¦ ´Ù·ç´Â µ¥ Æ¯È­µÈ ½Å°æ¸Á Á¾·ù
-        Convolution: ÀÔ·ÂÅÙ¼­·ÎºÎÅÍ ¾î¶² Æ¯Â¡ÀÌ ÀÖ´ÂÁö¸¦ ÈÈ¾î³»°í,
-        Pooling: convolutionÀÌ ÃßÃâÇÑ Æ¯Â¡À¸·ÎºÎÅÍ ´ëÇ¥ÀûÀÎ °Íµé¸¸À» Ãß·Á³»´Â subsampling ÀÛ¾÷
+        ì¸ê³µì‹ ê²½ë§ì€ Image í˜•íƒœì™€ ê°™ì´ ê°€ë¡œxì„¸ë¡œì˜ ê³µê°„ì •ë³´ë¥¼ ê°€ì§„ ë°ì´í„°ë¥¼ ë‹¤ë£¨ëŠ” ë° íŠ¹í™”ëœ ì‹ ê²½ë§ ì¢…ë¥˜
+        Convolution: ìž…ë ¥í…ì„œë¡œë¶€í„° ì–´ë–¤ íŠ¹ì§•ì´ ìžˆëŠ”ì§€ë¥¼ í›‘ì–´ë‚´ê³ ,
+        Pooling: convolutionì´ ì¶”ì¶œí•œ íŠ¹ì§•ìœ¼ë¡œë¶€í„° ëŒ€í‘œì ì¸ ê²ƒë“¤ë§Œì„ ì¶”ë ¤ë‚´ëŠ” subsampling ìž‘ì—…
       RNN : Recurrent Neural Network
-        ÀÎ°ø½Å°æ¸ÁÀº ¼øÂ÷ÀûÀÎ Èå¸§À» °®´Â µ¥ÀÌÅÍ¸¦ ´Ù·ç´Â µ¥ Æ¯È­µÈ ½Å°æ¸Á Á¾·ù
-        ¸Å timestep¸¶´Ù µ¥ÀÌÅÍ°¡ µé¾î¿À´Âµ¥, ÀÔ·ÂµÈ µ¥ÀÌÅÍ »Ó ¾Æ´Ï¶ó °ú°ÅÀÇ Ã³¸® ÀÌ·ÂÀ» ¹Ý¿µÇÏ¿© Ãâ·ÂÇÏ´Â ¹æ½Ä
-  1-2 ½Ç½ÀÈ¯°æ¼ÂÆÃ
+        ì¸ê³µì‹ ê²½ë§ì€ ìˆœì°¨ì ì¸ íë¦„ì„ ê°–ëŠ” ë°ì´í„°ë¥¼ ë‹¤ë£¨ëŠ” ë° íŠ¹í™”ëœ ì‹ ê²½ë§ ì¢…ë¥˜
+        ë§¤ timestepë§ˆë‹¤ ë°ì´í„°ê°€ ë“¤ì–´ì˜¤ëŠ”ë°, ìž…ë ¥ëœ ë°ì´í„° ë¿ ì•„ë‹ˆë¼ ê³¼ê±°ì˜ ì²˜ë¦¬ ì´ë ¥ì„ ë°˜ì˜í•˜ì—¬ ì¶œë ¥í•˜ëŠ” ë°©ì‹
+  1-2 ì‹¤ìŠµí™˜ê²½ì…‹íŒ…
 
-2. ºñÁ¤Çü µ¥ÀÌÅÍ Ã³¸®
+2. ë¹„ì •í˜• ë°ì´í„° ì²˜ë¦¬
   2-1 Data Normalization & Augmentation
     Normalization
-      µ¥ÀÌÅÍ °ªµéÀÇ ¹üÀ§¸¦ 0~1 »çÀÌÀÇ °ªÀ¸·Î Ãà¼Ò
-      µö·¯´× ¸ðµ¨ÀÇ ÇÐ½À ¼Óµµ¸¦ ºü¸£°Ô ÇÏ±â À§ÇØ + µ¥ÀÌÅÍ°ª Å©±â¿¡ µû¸¥ ¿µÇâ ºÐ»ê
+      ë°ì´í„° ê°’ë“¤ì˜ ë²”ìœ„ë¥¼ 0~1 ì‚¬ì´ì˜ ê°’ìœ¼ë¡œ ì¶•ì†Œ
+      ë”¥ëŸ¬ë‹ ëª¨ë¸ì˜ í•™ìŠµ ì†ë„ë¥¼ ë¹ ë¥´ê²Œ í•˜ê¸° ìœ„í•´ + ë°ì´í„°ê°’ í¬ê¸°ì— ë”°ë¥¸ ì˜í–¥ ë¶„ì‚°
     Data standardization
-      »ç¿ëÀÚ°¡ µ¥ÀÌÅÍ¸¦ Ã³¸®ÇÏ°í ºÐ¼® ÇÒ ¼ö ÀÖµµ·Ï µ¥ÀÌÅÍ¸¦ °øÅë Çü½ÄÀ¸·Î º¯È¯
+      ì‚¬ìš©ìžê°€ ë°ì´í„°ë¥¼ ì²˜ë¦¬í•˜ê³  ë¶„ì„ í•  ìˆ˜ ìžˆë„ë¡ ë°ì´í„°ë¥¼ ê³µí†µ í˜•ì‹ìœ¼ë¡œ ë³€í™˜
     Augmentation
-      ÀÎÀ§ÀûÀ¸·Î µ¥ÀÌÅÍ¸¦ ´Ã·Á¼­ °úÀûÇÕ(overfitting)À» ¹æÁöÇÏ°í ÀÏ¹ÝÈ­ ¼º´ÉÀ» ³ôÀÓ
-      ¿¹) ¿µ»ó
-      ÀÏÁ¤ ¿µ¿ª noise Ã¤¿ì±â, µÎ ÀÌ¹ÌÁö ¼¯±â, Å©±â&¹èÀ² Á¶Á¤ ¹× È¸Àü
-      example: image augmentation ¿øº» ÆîÄ¡±â
-    (½Ç½ÀÆÄÀÏ) 2-1.½Ç½À_µ¥ÀÌÅÍ_ÀüÃ³¸®.ipynb
+      ì¸ìœ„ì ìœ¼ë¡œ ë°ì´í„°ë¥¼ ëŠ˜ë ¤ì„œ ê³¼ì í•©(overfitting)ì„ ë°©ì§€í•˜ê³  ì¼ë°˜í™” ì„±ëŠ¥ì„ ë†’ìž„
+      ì˜ˆ) ì˜ìƒ
+      ì¼ì • ì˜ì—­ noise ì±„ìš°ê¸°, ë‘ ì´ë¯¸ì§€ ì„žê¸°, í¬ê¸°&ë°°ìœ¨ ì¡°ì • ë° íšŒì „
+      example: image augmentation ì›ë³¸ íŽ¼ì¹˜ê¸°
+    (ì‹¤ìŠµíŒŒì¼) 2-1.ì‹¤ìŠµ_ë°ì´í„°_ì „ì²˜ë¦¬.ipynb
   2-2 Embedding
-    ¿¬»êÀÌ ¾î·Á¿î ¹üÁÖÇü(categorical)ÀÌ³ª ÅØ½ºÆ® µ¥ÀÌÅÍ¸¦ °è»ê °¡´ÉÇÑ º¤ÅÍ·Î º¯È¯ ÇÏ´Â °úÁ¤
-    1) One-hot encoding (¿ø-ÇÖ ÀÎÄÚµù)
-      (Á¤ÀÇ) ¸ðµç µ¥ÀÌÅÍÀÇ ¹üÁÖ¸¦ ÂÞ·ç·è ÁÙ¼¼¿ö »çÀüÀ» ¸¸µé°í, ¼ø¼­´ë·Î ¹øÈ£¸¦ ºÙÀÌ´Â ÀÛ¾÷
-      (°úÁ¤) 
-        ³»°¡ °¡Áø ¸ðµç ¹üÁÖÀÇ Áßº¹À» Á¦°ÅÇÑ »çÀü(vocab) »ý¼º
-        »çÀü(vocab)ÀÇ ±æÀÌ(Áßº¹ Á¦¿ÜÇÑ ¹üÁÖ ¼ö)¸¸Å­ º¤ÅÍ¸¦ Á¤ÀÇÇÏ°í,
-         º¤ÅÍ¿¡¼­ ÅäÅ«ÀÇ ¼ø¼­¿¡ ÇØ´çÇÏ´Â À§Ä¡¸¸ 1, ³ª¸ÓÁö´Â 0ÀÇ °ªÀ¸·Î Ã¤¿ö º¤ÅÍ¸¦ ±¸¼º
-        °¡Áø µ¥ÀÌÅÍÀÇ ¹üÁÖµéÀ» ÇØ´ç º¤ÅÍ·Î ±³Ã¼
-      (È¿°ú) ¿ø-ÇÖ ÀÎÄÚµù ¹æ½ÄÀ¸·Î µ¥ÀÌÅÍ¸¦ ÀÓº£µùÇÏ°ÔµÇ¸é ¸ðµç ¹üÁÖ°£ ¡î2¸¸Å­ÀÇ ¼­·Î µ¿ÀÏÇÑ °Å¸®¸¦ °®°Ô µÇ¾î, ¿©·¯ ¹üÁÖ¸¦ µ¿µîÇÏ°Ô Ãë±Þ
-      (´ÜÁ¡) ¹üÁÖ°¡ ´Ù¾çÇÏ°í ¼ö°¡ ¸¹À»¼ö·Ï ¹üÁÖ ÇÏ³ª¸¦ Ç¥ÇöÇÏ±â À§ÇØ¼­ ±²ÀåÈ÷ ±æÀÌ°¡ ±ä º¤ÅÍ¸¦ ÇÊ¿ä
+    ì—°ì‚°ì´ ì–´ë ¤ìš´ ë²”ì£¼í˜•(categorical)ì´ë‚˜ í…ìŠ¤íŠ¸ ë°ì´í„°ë¥¼ ê³„ì‚° ê°€ëŠ¥í•œ ë²¡í„°ë¡œ ë³€í™˜ í•˜ëŠ” ê³¼ì •
+    1) One-hot encoding (ì›-í•« ì¸ì½”ë”©)
+      (ì •ì˜) ëª¨ë“  ë°ì´í„°ì˜ ë²”ì£¼ë¥¼ ì­ˆë£¨ë£© ì¤„ì„¸ì›Œ ì‚¬ì „ì„ ë§Œë“¤ê³ , ìˆœì„œëŒ€ë¡œ ë²ˆí˜¸ë¥¼ ë¶™ì´ëŠ” ìž‘ì—…
+      (ê³¼ì •)
+        ë‚´ê°€ ê°€ì§„ ëª¨ë“  ë²”ì£¼ì˜ ì¤‘ë³µì„ ì œê±°í•œ ì‚¬ì „(vocab) ìƒì„±
+        ì‚¬ì „(vocab)ì˜ ê¸¸ì´(ì¤‘ë³µ ì œì™¸í•œ ë²”ì£¼ ìˆ˜)ë§Œí¼ ë²¡í„°ë¥¼ ì •ì˜í•˜ê³ ,
+         ë²¡í„°ì—ì„œ í† í°ì˜ ìˆœì„œì— í•´ë‹¹í•˜ëŠ” ìœ„ì¹˜ë§Œ 1, ë‚˜ë¨¸ì§€ëŠ” 0ì˜ ê°’ìœ¼ë¡œ ì±„ì›Œ ë²¡í„°ë¥¼ êµ¬ì„±
+        ê°€ì§„ ë°ì´í„°ì˜ ë²”ì£¼ë“¤ì„ í•´ë‹¹ ë²¡í„°ë¡œ êµì²´
+      (íš¨ê³¼) ì›-í•« ì¸ì½”ë”© ë°©ì‹ìœ¼ë¡œ ë°ì´í„°ë¥¼ ìž„ë² ë”©í•˜ê²Œë˜ë©´ ëª¨ë“  ë²”ì£¼ê°„ âˆš2ë§Œí¼ì˜ ì„œë¡œ ë™ì¼í•œ ê±°ë¦¬ë¥¼ ê°–ê²Œ ë˜ì–´, ì—¬ëŸ¬ ë²”ì£¼ë¥¼ ë™ë“±í•˜ê²Œ ì·¨ê¸‰
+      (ë‹¨ì ) ë²”ì£¼ê°€ ë‹¤ì–‘í•˜ê³  ìˆ˜ê°€ ë§Žì„ìˆ˜ë¡ ë²”ì£¼ í•˜ë‚˜ë¥¼ í‘œí˜„í•˜ê¸° ìœ„í•´ì„œ êµ‰ìž¥ížˆ ê¸¸ì´ê°€ ê¸´ ë²¡í„°ë¥¼ í•„ìš”
     2) Embedding
-      µ¥ÀÌÅÍ¸¦ ´ÙÂ÷¿øÀÇ º¤ÅÍ °ø°£ÀÇ ÇÑ Á¡À¸·Î ¸ÅÇÎ
-      (½Ç½ÀÆÄÀÏ) 2-2.½Ç½À_Embedding.ipynb
-      example_Embedding ¿øº» ÆîÄ¡±â
+      ë°ì´í„°ë¥¼ ë‹¤ì°¨ì›ì˜ ë²¡í„° ê³µê°„ì˜ í•œ ì ìœ¼ë¡œ ë§¤í•‘
+      (ì‹¤ìŠµíŒŒì¼) 2-2.ì‹¤ìŠµ_Embedding.ipynb
+      example_Embedding ì›ë³¸ íŽ¼ì¹˜ê¸°
       Tokenizing (Parsing)
-        ÇÑ µ¢ÀÌ·Î µÇ¾îÀÖ´Â ¹®ÀåÀ» ÀÎ°ø½Å°æ¸Á¿¡ ÀÎ½Ä½ÃÅ°±â À§ÇØ¼­, ÀÓº£µù °¡´ÉÇÑ ´ÜÀ§·Î ÂÉ°³´Â ÀÛ¾÷
-        ÅäÅ«(token): ÂÉ°³Áø ´ÜÀ§
-        ÇÑ±¹¾îÀÇ °æ¿ì¿£ ±³Âø¾î¶ó´Â ¾ð¾î Æ¯¼º»ó ¹®ÀåÀ» ÇüÅÂ¼Ò ´ÜÀ§·Î ÀÚ¸£°Å³ª À½Àý´ÜÀ§¸¦ »ç¿ë
-      »çÀü ¸¸µé±â
-        À½Àý ´ÜÀ§·Î ÅØ½ºÆ®¸¦ ÂÉ°³±â·Î Çß´Ù¸é, ³»°¡ Ã³¸®ÇÒ ¸ðµç À½ÀýÀÇ Á¾·ù¸¦ ¸ð¾Æ »çÀü(vocab)À» ±¸Ãà
-        Æ¯¼ö Token Ãß°¡
-          [PAD]: Padding ¡æ ¹Ì´Ï¹èÄ¡°£ µ¥ÀÌÅÍ ±æÀÌ¸¦ ¸ÂÃß±â À§ÇØ ºó ºÎºÐÀ» Ã¤¿ì±â À§ÇØ »ç¿ë
-          [OOV]: Out of Vocabulary ¡æ vocab »çÀü¿¡ ¾ø´Â Ã³À½º¸´Â ±ÛÀÚ
-      input º¯È¯
-      Embedding ¹× ¸ðµ¨ ÇÐ½À
-        ¹Ø¿¡ 3-1¿¡¼­ ½Ç½À
+        í•œ ë©ì´ë¡œ ë˜ì–´ìžˆëŠ” ë¬¸ìž¥ì„ ì¸ê³µì‹ ê²½ë§ì— ì¸ì‹ì‹œí‚¤ê¸° ìœ„í•´ì„œ, ìž„ë² ë”© ê°€ëŠ¥í•œ ë‹¨ìœ„ë¡œ ìª¼ê°œëŠ” ìž‘ì—…
+        í† í°(token): ìª¼ê°œì§„ ë‹¨ìœ„
+        í•œêµ­ì–´ì˜ ê²½ìš°ì—” êµì°©ì–´ë¼ëŠ” ì–¸ì–´ íŠ¹ì„±ìƒ ë¬¸ìž¥ì„ í˜•íƒœì†Œ ë‹¨ìœ„ë¡œ ìžë¥´ê±°ë‚˜ ìŒì ˆë‹¨ìœ„ë¥¼ ì‚¬ìš©
+      ì‚¬ì „ ë§Œë“¤ê¸°
+        ìŒì ˆ ë‹¨ìœ„ë¡œ í…ìŠ¤íŠ¸ë¥¼ ìª¼ê°œê¸°ë¡œ í–ˆë‹¤ë©´, ë‚´ê°€ ì²˜ë¦¬í•  ëª¨ë“  ìŒì ˆì˜ ì¢…ë¥˜ë¥¼ ëª¨ì•„ ì‚¬ì „(vocab)ì„ êµ¬ì¶•
+        íŠ¹ìˆ˜ Token ì¶”ê°€
+          [PAD]: Padding â†’ ë¯¸ë‹ˆë°°ì¹˜ê°„ ë°ì´í„° ê¸¸ì´ë¥¼ ë§žì¶”ê¸° ìœ„í•´ ë¹ˆ ë¶€ë¶„ì„ ì±„ìš°ê¸° ìœ„í•´ ì‚¬ìš©
+          [OOV]: Out of Vocabulary â†’ vocab ì‚¬ì „ì— ì—†ëŠ” ì²˜ìŒë³´ëŠ” ê¸€ìž
+      input ë³€í™˜
+      Embedding ë° ëª¨ë¸ í•™ìŠµ
+        ë°‘ì— 3-1ì—ì„œ ì‹¤ìŠµ
 
-3. µö·¯´× ÇÙ½É TASK
-  3-1 ±âº» ¸ðµ¨ È°¿ë (FNN/CNN/RNN)
+3. ë”¥ëŸ¬ë‹ í•µì‹¬ TASK
+  3-1 ê¸°ë³¸ ëª¨ë¸ í™œìš© (FNN/CNN/RNN)
     FNN
-      MNIST Èæ¹é ¼Õ±Û¾¾
-      (½Ç½ÀÆÄÀÏ) 3-1.½Ç½À_1_FNN.ipynb
-        Functional API ¹æ½ÄÀ¸·Î ±¸ÇöµÊ
+      MNIST í‘ë°± ì†ê¸€ì”¨
+      (ì‹¤ìŠµíŒŒì¼) 3-1.ì‹¤ìŠµ_1_FNN.ipynb
+        Functional API ë°©ì‹ìœ¼ë¡œ êµ¬í˜„ë¨
     CNN
-      °³/°í¾çÀÌ ¿µ»ó ºÐ·ù
-      (½Ç½ÀÆÄÀÏ) 3-1.½Ç½À_2_CNN.ipynb
+      ê°œ/ê³ ì–‘ì´ ì˜ìƒ ë¶„ë¥˜
+      (ì‹¤ìŠµíŒŒì¼) 3-1.ì‹¤ìŠµ_2_CNN.ipynb
     RNN
-      ¿µÈ­ ¸®ºä ±àÁ¤/ºÎÁ¤ ºÐ·ùÇÏ´Â ÅØ½ºÆ® °¨¼ººÐ·ù: RNN(LSTM)
-      (½Ç½ÀÆÄÀÏ) 3-1.½Ç½À_3_RNN.ipynb
+      ì˜í™” ë¦¬ë·° ê¸ì •/ë¶€ì • ë¶„ë¥˜í•˜ëŠ” í…ìŠ¤íŠ¸ ê°ì„±ë¶„ë¥˜: RNN(LSTM)
+      (ì‹¤ìŠµíŒŒì¼) 3-1.ì‹¤ìŠµ_3_RNN.ipynb
   3-2 Transfer Learning
-    ÇÑ¹ø ¸¸µé¾îÁø µö·¯´× ¸ðµ¨À» ÀçÈ°¿ëÇÏ¿© ¾µ ¼ö ÀÖ´Â ±â¹ý
-    ¸ðµ¨ÀÌ »çÀü¿¡ ÇÐ½ÀÇÑ Áö½ÄÀº Àß À¯ÁöÇÏ¸é¼­µµ, »õ·Î¿î ÅÂ½ºÅ©¸¦ ¼öÇàÇÏ´Â µ¥¿¡ ÇÊ¿äÇÑ Áö½ÄÀ» Ãß°¡·Î ½ÀµæÇÒ ¼ö ÀÖµµ·Ï ÇÔ
-    (½Ç½ÀÆÄÀÏ) 3-2.½Ç½À_Transfer_Learning.ipynb
-      (1Â÷ ½ÃÇè ³»¿ë??)
+    í•œë²ˆ ë§Œë“¤ì–´ì§„ ë”¥ëŸ¬ë‹ ëª¨ë¸ì„ ìž¬í™œìš©í•˜ì—¬ ì“¸ ìˆ˜ ìžˆëŠ” ê¸°ë²•
+    ëª¨ë¸ì´ ì‚¬ì „ì— í•™ìŠµí•œ ì§€ì‹ì€ ìž˜ ìœ ì§€í•˜ë©´ì„œë„, ìƒˆë¡œìš´ íƒœìŠ¤í¬ë¥¼ ìˆ˜í–‰í•˜ëŠ” ë°ì— í•„ìš”í•œ ì§€ì‹ì„ ì¶”ê°€ë¡œ ìŠµë“í•  ìˆ˜ ìžˆë„ë¡ í•¨
+    (ì‹¤ìŠµíŒŒì¼) 3-2.ì‹¤ìŠµ_Transfer_Learning.ipynb
+      (1ì°¨ ì‹œí—˜ ë‚´ìš©??)
   3-3 Multi-label Classification
-    one-hot ÀÎÄÚµù ¾ç½ÄÀ¸·Î ¶óº§ÀÌ ±¸¼ºµÇ¾îÀÖ¾ú´Ù¸é, Multi-label classificationÀÇ °æ¿ì¿¡´Â ÇØ´çÇÏ´Â Å¬·¡½ºÀÇ ÀÎµ¦½º°¡ ÀüºÎ 1·Î ±¸¼º
-      ¿¹) ¿µÈ­ Àå¸£
-      °¡Á¤ : [¾×¼Ç, ÄÚ¹Ìµð, ·Î¸Ç½º, °øÆ÷, µå¶ó¸¶]ÀÇ ´Ù¼¸ Å¬·¡½º
-      ¿µÈ­A : ·Î¸Ç½ºÀÌ¸é¼­µµ ÄÚ¹ÌµðÀÎ ¿µÈ­ ¡æ ÀÌ ¿µÈ­ÀÇ ¶óº§Àº [0,1,1,0,0]
-    (½Ç½ÀÆÄÀÏ) 3-3.½Ç½À_Multilabel_Classification.ipynb
-      (1Â÷ ½ÃÇè ³»¿ë??)
+    one-hot ì¸ì½”ë”© ì–‘ì‹ìœ¼ë¡œ ë¼ë²¨ì´ êµ¬ì„±ë˜ì–´ìžˆì—ˆë‹¤ë©´, Multi-label classificationì˜ ê²½ìš°ì—ëŠ” í•´ë‹¹í•˜ëŠ” í´ëž˜ìŠ¤ì˜ ì¸ë±ìŠ¤ê°€ ì „ë¶€ 1ë¡œ êµ¬ì„±
+      ì˜ˆ) ì˜í™” ìž¥ë¥´
+      ê°€ì • : [ì•¡ì…˜, ì½”ë¯¸ë””, ë¡œë§¨ìŠ¤, ê³µí¬, ë“œë¼ë§ˆ]ì˜ ë‹¤ì„¯ í´ëž˜ìŠ¤
+      ì˜í™”A : ë¡œë§¨ìŠ¤ì´ë©´ì„œë„ ì½”ë¯¸ë””ì¸ ì˜í™” â†’ ì´ ì˜í™”ì˜ ë¼ë²¨ì€ [0,1,1,0,0]
+    (ì‹¤ìŠµíŒŒì¼) 3-3.ì‹¤ìŠµ_Multilabel_Classification.ipynb
+      (1ì°¨ ì‹œí—˜ ë‚´ìš©??)
   3-4 Metric Learning
-    °´Ã¼ »çÀÌÀÇ À¯»çµµ¸¦ ÆÄ¾Ç
-      °°´Ù/´Ù¸£´Ù¶ó´Â À¯»çµµ¸¦ ³ªÅ¸³»±â À§ÇØ¼­´Â °Å¸®(distance)°¡ ÇÊ¿ä
-      °Å¸®°¡ °¡±î¿ì¸é °°Àº Á¾·ùÀÇ »ç¹°ÀÌ°í, ¸Ö¸é ´Ù¸¥ Á¾·ùÀÇ »ç¹°ÀÌ¶ó°í ÇÒ ¼ö ÀÖÀ½
-    Metric LearningÀÇ ±¸¼ºÀº Å©°Ô µÎ °¡Áö
-      (1) ¾î¶² °Å¸®(À¯»çµµ)¸¦ »ç¿ëÇÒ °ÍÀÎ°¡
-        Euclidean distance, Cosine similarity, Wasserstein distance µî
-      (2) À¯»çµµ ÇÐ½ÀÀ» À§ÇØ ¾î¶² loss ÇÔ¼ö·Î ÇÐ½ÀÇÒ °ÍÀÎ°¡
-        Triplet loss: tf.einsum_¼³¸í_v1.pptx
-      (½Ç½ÀÆÄÀÏ) 3-4.½Ç½À_Metric_Learning.ipynb
+    ê°ì²´ ì‚¬ì´ì˜ ìœ ì‚¬ë„ë¥¼ íŒŒì•…
+      ê°™ë‹¤/ë‹¤ë¥´ë‹¤ë¼ëŠ” ìœ ì‚¬ë„ë¥¼ ë‚˜íƒ€ë‚´ê¸° ìœ„í•´ì„œëŠ” ê±°ë¦¬(distance)ê°€ í•„ìš”
+      ê±°ë¦¬ê°€ ê°€ê¹Œìš°ë©´ ê°™ì€ ì¢…ë¥˜ì˜ ì‚¬ë¬¼ì´ê³ , ë©€ë©´ ë‹¤ë¥¸ ì¢…ë¥˜ì˜ ì‚¬ë¬¼ì´ë¼ê³  í•  ìˆ˜ ìžˆìŒ
+    Metric Learningì˜ êµ¬ì„±ì€ í¬ê²Œ ë‘ ê°€ì§€
+      (1) ì–´ë–¤ ê±°ë¦¬(ìœ ì‚¬ë„)ë¥¼ ì‚¬ìš©í•  ê²ƒì¸ê°€
+        Euclidean distance, Cosine similarity, Wasserstein distance ë“±
+      (2) ìœ ì‚¬ë„ í•™ìŠµì„ ìœ„í•´ ì–´ë–¤ loss í•¨ìˆ˜ë¡œ í•™ìŠµí•  ê²ƒì¸ê°€
+        Triplet loss: tf.einsum_ì„¤ëª…_v1.pptx
+      (ì‹¤ìŠµíŒŒì¼) 3-4.ì‹¤ìŠµ_Metric_Learning.ipynb
